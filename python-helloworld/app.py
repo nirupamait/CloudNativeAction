@@ -4,6 +4,8 @@ import logging
 
 app = Flask(__name__)
 
+#print hello
+
 @app.route('/status')
 def healthcheck():
     response = app.response_class(
